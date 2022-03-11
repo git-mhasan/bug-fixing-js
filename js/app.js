@@ -27,8 +27,9 @@ const reportPost = (id) => {
   showPosts(remainingPosts);
 };
 
+//showing read more if the comment text is more than 30 character length.
 const displayContent = (text) => {
-  return text.length < 30 ? 'text' : text.slice(0, 30) + "<span class='fw-bold'>... read more</span>";
+  return text.length < 30 ? text : text.slice(0, 30) + "<span class='fw-bold'>... read more</span>";
 };
 
 const switchTab = (id) => {
