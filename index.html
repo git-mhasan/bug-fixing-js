@@ -80,7 +80,30 @@
 
         <h5>Question: What are the difference between Local Storage and Session Storage?</h5>
         <p>
-            <strong>Answer: </strong>
+            <strong>Answer: </strong> Both the localStorage and sessionStorage are a mechanism for storing data
+            locally inside the user device. It is part of the Web Storage API. There are some difference between
+            localStorage and sessionStorage -
+
+        <table class="table">
+            <thead>
+                <tr class="text-center">
+                    <th>localStorage</th>
+                    <th>sessionStorage</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>The data stored in localStorage exists until explicitly deleted.</td>
+                    <td>The data stored in sessionStorage exists until browser tab/window is closed.</td>
+                </tr>
+                <tr>
+                    <td>Data saved with loacalStorage will be available for all current and future visits to the site.
+                    </td>
+                    <td>Data saved with sessionStorage will be expired as soon as the session is closed.</td>
+                </tr>
+            </tbody>
+        </table>
+
         </p>
     </section>
     <footer></footer>
