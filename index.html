@@ -65,12 +65,17 @@
             compiled language, every line of JavaScript interpreted and executed with browsers Just-In-Time (JIT)
             compiler. It is also a single-threaded programming language in which the function calls are stacked on top
             of another in a first in last out order. Despite being single-threaded language, it is capable of performing
-            async operation. JavaScript perform the asynchronous operation by putting the async task into the event
+            async operation. JavaScript perform the asynchronous operation by putting the async task into the callback
             queue.
         </p>
         <h5>Question: What does Javascript Event Loop do?</h5>
         <p>
-            <strong>Answer: </strong>
+            <strong>Answer: </strong>When JavaScript codes are executed, all it's operations are stoed in a stack which
+            is called call stack. On the other hand, when callback functions or promises are created it is sent to a
+            event queue. The event loop is a process that keep track of both the event queue and the call stack. If the
+            call stack becomes empty, the event loop sends the first function in the row of the event queue to the call
+            stack. Thus the async operation in JavaScript become possible as it is a single-threaded programming
+            language.
         </p>
 
         <h5>Question: What are the difference between Local Storage and Session Storage?</h5>
